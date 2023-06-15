@@ -1,0 +1,171 @@
+.card {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.card__image {
+  width: 100%;
+  display: flex;
+  border-radius: 6px;
+  position: relative;
+}
+
+.card__description {
+  margin: 14px 14px 0;
+  position: relative;
+  height: 18px;
+}
+
+.card__name {
+  width: calc(100% - 66px);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.21;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 0.909;
+  color:#8B8B8B;
+  margin: 0;
+  background-color: #2F2F2F;
+  border-radius: 3px;
+  width: 52px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card__button-saved {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 72px;
+  height: 21px;
+  background-color: #313131;
+  border-radius: 30px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0.9;
+  color:#fff;
+  cursor: pointer;
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+.card__button-saved:hover {
+  opacity: .8;
+}
+
+.card__container:hover .card__button-saved {
+  visibility: visible;
+}
+
+.card_button-saved_active {
+  visibility: visible;
+  background: url('../../images/card__btn-saved_active.svg') no-repeat 50% 50%;
+  width: 21px;
+  height: 21px;
+  padding: 10.5px;
+  background-color: #EE3465;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+.card_button-saved_active:hover {
+  opacity: .8;
+}
+
+.card__container:hover .card__button-delete {
+ visibility: visible;
+}
+
+.card__button-delete {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: url('../../images/card_btn-delete.svg') no-repeat 50% 50%;
+  width: 21px;
+  height: 21px;
+  padding: 10.5px;
+  background-color: #313131;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+.card__button-delete:hover {
+  opacity: .7;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .card__description {
+    margin: 25px 0 0;
+  }
+
+  .card__name {
+    width: calc(100% - 89px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .card__description {
+    margin: 16px 0 0;
+  }
+
+  .card__name {
+    width: calc(100% - 60px);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .card__button-saved {
+    top: 10px;
+    right: 10px;
+  }
+
+  .card__button-delete {
+    top: 10px;
+    right: 10px;
+  }
+}

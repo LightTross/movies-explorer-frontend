@@ -1,0 +1,45 @@
+.nav-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.nav-tab__link {
+  width: 96px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #303030;
+  color:#fff;
+  border-radius: 10px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.33;
+  text-decoration: none;
+  opacity: 1;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.nav-tab__link:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-tab {
+    gap: 6px;
+    margin-bottom: 17px;
+  }
+  .nav-tab__link {
+    width: 82px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
