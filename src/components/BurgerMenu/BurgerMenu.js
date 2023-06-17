@@ -9,12 +9,12 @@ const BurgerMenu = ({ isBurgerOpen, onClose }) => {
       <div className='burger__container'>
         <button type='button' className='burger__close-button' onClick={onClose} />
         <div className='burger__nav'>
-          <NavLink to='/' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link_active' : 'burger__link'}>Главная</NavLink>
-          <NavLink to='/movies' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link_active' : 'burger__link'}>Фильмы</NavLink>
-          <NavLink to='/saved-movies' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link_active' : 'burger__link'}>Сохраненные фильмы</NavLink>
+          <NavLink to='/' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link burger__link_active' : 'burger__link'}>Главная</NavLink>
+          <NavLink to='/movies' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link burger__link_active' : 'burger__link'}>Фильмы</NavLink>
+          <NavLink to='/saved-movies' onClick={onClose} className={({ isActive }) => isActive ? 'burger__link burger__link_active' : 'burger__link'}>Сохраненные фильмы</NavLink>
         </div>
         <div className='burger__profile'>
-          <Link to='/profile' onClick={onClose} className='burger__profile_link'/>
+          <Link to='/profile' onClick={onClose} className='burger__profile-link'/>
         </div>
       </div>
 

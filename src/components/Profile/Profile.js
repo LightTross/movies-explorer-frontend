@@ -34,7 +34,7 @@ const Profile = ({onUpdateUser, loggedIn, onSignOut}) => {
       <Header loggedIn={loggedIn}/>
       <div className='profile'>
         <h1 className='profile__title'>Привет, {currentUser.name}!</h1>
-        <form className='profile__form' onSubmit={handleSubmit}>
+        <form name='profile' className='profile__form' onSubmit={handleSubmit}>
           <div className='profile__form-block'>
             <label htmlFor='name' className='profile__label'>Имя</label>
             <input

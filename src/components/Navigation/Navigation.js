@@ -15,9 +15,9 @@ const Navigation = ({ loggedIn, isActive }) => {
       {
         loggedIn ? (
           <>
-            <div className='navigation__movies'>
-              <NavLink to='/movies' className={ ({ isActive }) => isActive ? 'navigation__movies-link_active' : 'navigation__movies-link'}>Фильмы</NavLink>
-              <NavLink to='/saved-movies' className={ ({ isActive }) => isActive ? 'navigation__movies-link_active' : 'navigation__movies-link'}>Сохраненные фильмы</NavLink>
+            <div className='navigation__list'>
+              <NavLink to='/movies' className={ ({ isActive }) => isActive ? 'navigation__list-link navigation__list-link_active' : 'navigation__list-link'}>Фильмы</NavLink>
+              <NavLink to='/saved-movies' className={ ({ isActive }) => isActive ? 'navigation__list-link navigation__list-link_active' : 'navigation__list-link'}>Сохраненные фильмы</NavLink>
             </div>
             <div className='navigation__profile'>
               <Link to='/profile' className='navigation__profile-link'/>
@@ -35,7 +35,7 @@ const Navigation = ({ loggedIn, isActive }) => {
       {
         loggedIn && !isBurgerOpen ? (
           <>
-            <button className='navigation__button-burger' onClick={handleBurgerMenu} >
+            <button className='navigation__button-burger' type='button' onClick={handleBurgerMenu} >
             </button>
           </>
         ) :

@@ -50,7 +50,7 @@ const App = () => {
   //деавторизовываем пользователя
   const handleSignOut = () => {
       setLoggedIn(false);
-      navigate('/signin');
+      navigate('/');
   }
 
   return (

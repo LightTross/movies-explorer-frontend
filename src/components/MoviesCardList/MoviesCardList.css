@@ -1,6 +1,7 @@
 .cards {
   width: calc(100% - 140px);
-  margin: 70px auto 0;
+  margin: 0 auto;
+  padding-top: 70px;
   min-height: 473px;
 }
 
@@ -63,7 +64,7 @@
   }
 
   .cards__list {
-    grid-template-columns: auto auto;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
     row-gap: 45px;
   }
 
@@ -75,11 +76,11 @@
 @media screen and (max-width: 425px) {
   .cards {
     width: calc(100% - 20px);
-    margin: 40px auto 0;
+    padding-top: 40px;
   }
 
   .cards__list {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     row-gap: 36px;
   }
 

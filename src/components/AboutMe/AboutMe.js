@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className='about-me__container'>
         <h2 className='about-me__title'>Студент</h2>
         <article className='about-me__info'>
-        <img className='about-me__photo' src={photo} alt='Фото'/>
+        <img className='about-me__photo' src={photo} alt='Фото Анастасии'/>
           <div className='about-me__description'>
             <h3 className='about-me__name'>Анастасия</h3>
             <p className='about-me__profession'>Вэб-разработчик, 30 лет</p>

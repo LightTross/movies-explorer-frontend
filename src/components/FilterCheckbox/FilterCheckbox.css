@@ -10,7 +10,7 @@
   position: relative;
   width: 36px;
   height: 20px;
-  margin-right: 14px;
+  margin-right: 15px;
 }
 
 .filter__checkbox{
@@ -63,8 +63,10 @@
 
 @media screen and (max-width: 425px) {
   .filter {
-    width: 148px;
+    width: calc(100% - 8px);
     margin: 45px auto 0;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #424242;
   }
 
   .filter__container {

@@ -15,6 +15,7 @@ const MoviesCardList = ({movies, handleDefaultMovies, moreButton, searchResult})
             nameRU={movie.nameRU}
             duration={movie.duration}
             like={movie.like}
+            trailerLink={movie.trailerLink}
           />
         ))}
       </ul>

@@ -18,7 +18,7 @@ const Register = ({onRegister}) => {
     <div className='register'>
       <Link to='/' className='register__logo'/>
       <h1 className='register__title'>Добро пожаловать!</h1>
-      <form className='register__form' onSubmit={handleSubmit}>
+      <form name='register' className='register__form' onSubmit={handleSubmit}>
         <label htmlFor='name' className='register__label'>Имя</label>
         <input
           id='name'

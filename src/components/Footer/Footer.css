@@ -46,10 +46,6 @@
   list-style: none;
 }
 
-.footer__links {
-  display: flex;
-}
-
 .footer__link {
   font-family: 'Inter', Arial, sans-serif;
   font-size: 13px;
@@ -78,6 +74,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .footer {
+    padding-top: 78px;
+  }
+
   .footer__text {
     width: calc(100% - 20px);
     padding-bottom: 21px;

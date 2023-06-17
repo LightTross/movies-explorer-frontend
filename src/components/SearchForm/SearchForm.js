@@ -6,10 +6,16 @@ const SearchForm = ({isShortChecked, setIsShortChecked}) => {
   return (
     <section className='search'>
       <div className='search__container'>
-        <form className='search__form'>
+        <form name='search' className='search__form'>
           <label className='search__label'/>
-          <input type='text' className='search__input' search='search' placeholder='Фильм' required/>
-          <button type='button' className='search__button-submit'></button>
+          <input
+            type='text'
+            className='search__input'
+            placeholder='Фильм'
+            minLength={2}
+            required
+          />
+          <button type='submit' className='search__button-submit'></button>
         </form>
         <FilterCheckbox
           isShortChecked={isShortChecked}

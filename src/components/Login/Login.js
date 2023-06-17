@@ -22,7 +22,7 @@ const Login = ({onLogin}) => {
     <div className='login'>
       <Link to='/' className='login__logo'/>
       <h1 className='login__title'>Рады видеть!</h1>
-      <form className='login__form' onSubmit={handleSubmit}>
+      <form name='login' className='login__form' onSubmit={handleSubmit}>
         <label htmlFor='email' className='login__label'>E-mail</label>
         <input
           id='email'

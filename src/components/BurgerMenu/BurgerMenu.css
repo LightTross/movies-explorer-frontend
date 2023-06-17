@@ -99,7 +99,7 @@
   padding: 22px 0 90px;
 }
 
-.burger__profile_link {
+.burger__profile-link {
   background: url(../../images/navigation__profile.svg) no-repeat 50% 50%;
   border: none;
   width: 100px;
@@ -108,7 +108,7 @@
   transition: all .3s linear;
 }
 
-.burger__profile_link:hover {
+.burger__profile-link:hover {
   opacity: .7;
 }
 
