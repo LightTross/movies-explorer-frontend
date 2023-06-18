@@ -1,0 +1,14 @@
+import React from 'react';
+import './NavTab.css';
+
+const NavTab = () => {
+  return (
+    <nav className='nav-tab' >
+      <a href='#about-poject' className='nav-tab__link'>О проекте</a>
+      <a href='#techs' className='nav-tab__link'>Технологии</a>
+      <a href='#about-me' className='nav-tab__link'>Студент</a>
+    </nav>
+  )
+};
+
+export default NavTab;

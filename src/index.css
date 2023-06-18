@@ -1,0 +1,13 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+
+.root {
+  margin: 0;
+  background-color: #202020;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** { outline: 1px solid yellow; }*/
