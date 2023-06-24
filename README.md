@@ -23,6 +23,13 @@
 [https://github.com/LightTross/movies-explorer-frontend/pull/2]
 
 
+### Ссылка на фронтенд-часть:
+[https://talalayeva.promovies.nomoredomains.rocks]
+
+### Ссылка на бэкенд-часть:
+[https://api.talalayeva.promovies.nomoredomains.rocks/]
+
+
 ### Рекомендации к использованию:
 ---------------------------------
 Для работы и более детального ознакомления с этим проектом рекомендую клонировать его через git в локальный репозиторий.
