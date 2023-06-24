@@ -2,7 +2,11 @@ import React from 'react';
 import './FilterCheckbox.css';
 
 const FilterCheckbox = ({isShortChecked, setIsShortChecked}) => {
-  const handleShortChecked = (state) => setIsShortChecked(state)
+  const handleShortChecked = (state) => {
+    setIsShortChecked(state)
+    localStorage.setItem('isShortChecked', state);
+    localStorage.setItem('isSavedShortChecked', state);
+  }
 
   return (
     <div className='filter'>

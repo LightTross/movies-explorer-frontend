@@ -1,9 +1,9 @@
 import React from 'react';
 import './InfoTooltip.css'
 
-const InfoTooltip = ({errorMessage}) => {
+const InfoTooltip = ({isErrorMessage, infoMessage}) => {
   return (
-    <span className='info-tooltip'>{errorMessage}</span>
+    <span className={`info-tooltip ${isErrorMessage ? 'info-tooltip_error' : ''}`}>{infoMessage}</span>
   )
 }
 
