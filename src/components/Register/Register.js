@@ -1,16 +1,15 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import {Link} from 'react-router-dom';
 import './Register.css';
 import useFormAndValidation from '../../hooks/useFormAndValidation';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
 
-
-const Register = ({onRegister}) => {
+const Register = ({onRegister, isErrorMessage, infoMessage}) => {
   const { values, handleChange, errors, isValid } = useFormAndValidation();
-  const [isError, setIsError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     onRegister(values);
   };
 
@@ -62,11 +61,11 @@ const Register = ({onRegister}) => {
         />
         <span className={`register__input-error ${isValid ? '' : 'register__input-error_active'}`}>{errors.password}</span>
         <div className='register__buttons'>
-        {isError && <InfoTooltip errorMessage='Что-то пошло не так...'/>}
+        {infoMessage && <InfoTooltip isErrorMessage={isErrorMessage} infoMessage={infoMessage}/>}
           <button
             type='submit'
             className='register__button-submit'
-            disabled={!values.email || !values.password || !isValid}
+            disabled={!values.name || !values.email || !values.password || !isValid}
           >Зарегистрироваться</button>
         </div>
       </form>

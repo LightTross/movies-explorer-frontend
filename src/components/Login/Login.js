@@ -1,15 +1,15 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import {Link} from 'react-router-dom';
 import './Login.css';
 import useFormAndValidation from '../../hooks/useFormAndValidation';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
 
-const Login = ({onLogin}) => {
+const Login = ({onLogin, isErrorMessage, infoMessage}) => {
   const {values, handleChange, errors, isValid, setIsValid} = useFormAndValidation();
-  const [isError, setIsError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!values.email || !values.password) {
       return;
     }
@@ -17,6 +17,8 @@ const Login = ({onLogin}) => {
 
     setIsValid(true);
   };
+
+
 
   return (
     <div className='login'>
@@ -50,7 +52,7 @@ const Login = ({onLogin}) => {
         />
         <span className={`login__input-error ${isValid ? '' : 'login__input-error_active'}`}>{errors.password}</span>
         <div className='login__buttons'>
-          {isError && <InfoTooltip errorMessage='Что-то пошло не так...'/>}
+          {infoMessage && <InfoTooltip isErrorMessage={isErrorMessage} infoMessage={infoMessage}/>}
           <button
             type='submit'
             className='login__button-submit'
