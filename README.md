@@ -19,6 +19,9 @@
 ### Ссылка на макет:
 [https://disk.yandex.ru/d/YmoHR6QxU5V6tw]
 
+### Ссылка на пул реквест:
+[https://github.com/LightTross/movies-explorer-frontend/pull/2]
+
 
 ### Рекомендации к использованию:
 ---------------------------------
