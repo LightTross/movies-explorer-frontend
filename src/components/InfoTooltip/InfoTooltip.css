@@ -3,10 +3,14 @@
   margin: 0;
   position: absolute;
   top: -30px;
-  color: #EE3465;
+  color: #2BE080;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.21;
   text-align: center;
+}
+
+.info-tooltip_error{
+  color: #EE3465;
 }

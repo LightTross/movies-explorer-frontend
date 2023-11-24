@@ -7,7 +7,7 @@
 
 .cards__list {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: calc(33.3% - 20px) calc(33.3% - 20px) calc(33.3% - 20px);
   margin: 0 auto;
   padding: 0;
   list-style: none;

@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import './Navigation.css';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
-const Navigation = ({ loggedIn, isActive }) => {
+const Navigation = ({ loggedIn }) => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
   const handleBurgerMenu = () => {

@@ -17,7 +17,6 @@ const BurgerMenu = ({ isBurgerOpen, onClose }) => {
           <Link to='/profile' onClick={onClose} className='burger__profile-link'/>
         </div>
       </div>
-
     </div>
   )
 };

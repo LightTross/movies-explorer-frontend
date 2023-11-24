@@ -1,20 +1,33 @@
-import {React, useState} from 'react';
-import './SavedMovies.css';
+import {React} from 'react';
 import Header from '../Header/Header';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import {savedMovies} from '../../utils/constants';
 import Footer from '../Footer/Footer';
 
-const SavedMovies = ({loggedIn}) => {
-  const [isShortChecked, setIsShortChecked] = useState(true)
-  const [searchResult, setSearchResult] = useState(1)
-
+const SavedMovies = ({loggedIn, savedMovies, onDeleteMovie, searchSavedInput, searchSavedResult, searchInput, isShortChecked, setIsShortChecked, onSearch, isDefaultMoviesSet, setIsDefaultMoviesSet, isErrorMessage, infoMessage}) => {
   return (
     <>
       <Header loggedIn={loggedIn}/>
-      <SearchForm isShortChecked={isShortChecked} setIsShortChecked={setIsShortChecked}/>
-      <MoviesCardList movies={savedMovies} searchResult={searchResult}/>
+      <SearchForm
+          searchInput={searchSavedInput}
+          isShortChecked={isShortChecked}
+          setIsShortChecked={setIsShortChecked}
+          onSearch={onSearch}
+          isDefaultMoviesSet={isDefaultMoviesSet}
+          setIsDefaultMoviesSet={setIsDefaultMoviesSet}
+          isErrorMessage={isErrorMessage}
+          infoMessage={infoMessage}
+        />
+      <MoviesCardList
+        movies={savedMovies}
+        savedMovies={savedMovies}
+        searchResult={searchSavedResult}
+        searchInput={searchSavedInput}
+        onDeleteMovie={onDeleteMovie}
+        isShortChecked={isShortChecked}
+        isDefaultMoviesSet={isDefaultMoviesSet}
+        setIsDefaultMoviesSet={setIsDefaultMoviesSet}
+      />
       <Footer/>
     </>
   )
