@@ -13,26 +13,19 @@
 * Flexbox верстка
 * Технология Grid Layout
 * Валидация форм
+* React JS
 * Rest API
 * Webpack
-* CRA
-* Функциональные компоненты
-* Хуки
-* Cookie
 -----------------------------------------------------------------
 
 ### Ссылка на макет:
 [https://disk.yandex.ru/d/YmoHR6QxU5V6tw]
 
-### Ссылка на пул реквест:
-[https://github.com/LightTross/movies-explorer-frontend/pull/2]
-
-
 ### Ссылка на фронтенд-часть:
-[https://talalayeva.promovies.nomoredomains.rocks]
+[https://front1.demo.mycaptcha.ru]
 
 ### Ссылка на бэкенд-часть:
-[https://api.talalayeva.promovies.nomoredomains.rocks/]
+[https://api1.demo.mycaptcha.ru]
 
 
 ### Инструкция по развёртыванию:
@@ -53,7 +46,7 @@
 
     npm run dev 
 
-
 ### Планы по доработке проекта:
 -------------------------------
-
+* улучшить UX
+* добавить поля в профиль пользователя  

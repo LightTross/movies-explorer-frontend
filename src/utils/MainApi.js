@@ -1,6 +1,6 @@
 import { serverUrl } from "./constants";
 
-const baseUrl  = 'https://api.talalayeva.promovies.nomoredomains.rocks';
+const baseUrl  = 'https://api1.demo.mycaptcha.ru';
 
 const headers = {
   'Accept': 'application/json',
@@ -13,7 +13,6 @@ export const checkResponse = (res) => {
   }
   return Promise.reject(`Ошибка: ${res.status}`);
 };
-
 
 export const register = (name, email, password) => {
   return fetch(`${baseUrl}/signup`, {

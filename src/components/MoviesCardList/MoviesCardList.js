@@ -8,9 +8,8 @@ const MoviesCardList = ({movies, savedMovies, searchInput, onSaveMovie, onDelete
   const [addMoreMovies, setAddMoreMovies] = useState(3);
   const [countMovies, setCountMovies] = useState(0);
 
-  const moviesShort = movies.filter(movie => movie.duration <= 40); //фильтруем короткометражки
+  const moviesShort = Array.isArray(movies) ? movies.filter(movie => movie.duration <= 40) : []; //фильтруем короткометражки
   const moviesOutput = isShortChecked ? moviesShort : movies; //фильмы для вывода
-
 
   //первоначальное выставление количества отображаемых фильмов и кнопки "Ещё"
   useEffect(() => setDefaultMovies())
